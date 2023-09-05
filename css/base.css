@@ -1,0 +1,51 @@
+@import './preset.css';
+@import './colors.css';
+@import './bootstrap-grid.css';
+@import './style.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+@media (max-width: 1266px) {
+  .container {
+    width: 90%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.row-flex-a {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.alignVerticalCenter {
+  align-items: center;
+}
+
+
+/* ./ format DayPicker */
+
+/* global style popover */
+.container-popover {
+  overflow: visible !important;
+  z-index: 99;
+}
+.container-popover > div > div:first-child {
+  z-index: 1;
+}
+.container-popover .popover-content {
+  background: white;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08), 10px 0px 15px rgba(0, 0, 0, 0.08), -10px 0px 15px rgba(0, 0, 0, 0.08),
+    0px -5px 40px rgba(0, 0, 0, 0.08);
+  position: relative;
+}

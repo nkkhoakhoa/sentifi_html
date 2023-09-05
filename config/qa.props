@@ -1,0 +1,6 @@
+LOGIN_URL=https://qa-intelligence.sentifi.com/login
+PUBLIC_KEY=pk_test_51Hmyj9B9IB99093KfoDcNIAYlokv4Npr8MklmkX71cB1i5j9L4wzl5jVDqmaNJxhcEeDhi7vWTZHCtPTrMf2aXWg00v9hraShG
+PRICE_ID_TIER_1=price_1JZpOIB9IB99093KxJwEhIQk
+PRICE_ID_TIER_2=price_1JZpPlB9IB99093KbdmWi5NO
+PRICE_ID_TIER_3=price_1HtNGoB9IB99093KgPjn5Bd5
+LANDING_PAGE=https://qa.sentifi.com/portfolio-retail

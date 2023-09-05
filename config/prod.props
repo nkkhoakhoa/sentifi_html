@@ -1,0 +1,6 @@
+LOGIN_URL=https://intelligence.sentifi.com/login
+PUBLIC_KEY=pk_live_51Hmyj9B9IB99093KhulskIecjm5z6GZwSIr50CedPQInbY1Jm8RBUfQAiPHfbDEKByfKQjfbk0evYhiRimqF6qnL00EyxSiAlt
+PRICE_ID_TIER_1=price_1JbgzEB9IB99093KFjaXrlDs
+PRICE_ID_TIER_2=price_1JbgznB9IB99093Kjj7YGx1U
+PRICE_ID_TIER_3=price_1I6pr9B9IB99093KtlQGZtDR
+LANDING_PAGE=https://sentifi.com/portfolio-retail

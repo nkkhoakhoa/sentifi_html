@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Retail</title>
+  <link href="css/base.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="js/jquery.min.js"></script>
+  <script src="https://js.stripe.com/v3"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-199573447-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-199573447-1');
+  </script>
+</head>
+
+<body>
+  <section class="section_portfolio">
+    <div class="container">
+      <div class="headerCt">
+        <div class="leftCt">
+          <img class="logo" src="./images/logo.png" alt="Sentifi" />
+        </div>
+        <div class="topnav">
+          <a id="login" class="button_passive" style="padding-right: 0px;">Login</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div id="video_section" class="colPaddingTop">
+            <div id="error-message"></div>
+            <h1 class="section_main_title">Portfolio Intelligence</h1>
+            <!--h3 class="section_sub_title">for Retail Investors</h3-->
+            <img class="breaker" src="./images/breaker.png" alt="">
+            <p class="section_main_description">Sentifi is an award-winning provider of investment signals from social
+              media, news, forums, and blogs. Sentifi mines over 500M+ tweets, over 2M+ forums, news, blog articles per
+              day to capture investment insights on 50K+ stocks. This ensures you never miss out on market moving events
+              that impact portfolio value.</p>
+            <!--button class="button_active button_active_start_trial">
+              Subscribe Now
+            </button-->
+          </div>
+          <div id="notification">
+            <div class="message">
+              <img class="check_icon" src="images/icon_check/icon_check.png" />
+              <h1 class="section_main_title">Transaction successful</h1>
+            </div>
+            <h3 class="section_sub_title">Please check your email for your login credentials and further steps.</h3>
+          </div>
+        </div>
+        <div class="col-6" style="position: relative;">
+          <img class="top_image" src="./images/header.png" alt="">
+          <iframe class="top_video" src="https://www.youtube.com/embed/nrbjZruq9pw" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="key_analytic_section_dk">
+    <div class="container">
+      <div class="row" style="display: flex; justify-content: center;">
+        <hi class="section_title">Key Analytics and Features</hi>
+      </div>
+      <div class="key_slider">
+        <div class="key_slide_wrapper">
+          <div class="row key_slide">
+            <div class="col-4">
+              <div class="feature_wrapper">
+                <!-- <img class="check_icon" src="images/icon_check/icon_check.png" /> -->
+                <p class="feature_text" style="margin-bottom: 40px;">Add up to 500 stocks to your portfolio from our
+                  universe of 50,000 (every listed
+                  company in the world)</p>
+                <img class="feature_image" src="./images/key1.png" alt="">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="feature_wrapper">
+                <img class="feature_image" src="./images/key2.png" alt="">
+                <p class="feature_text" style="margin-top: 40px;">Filter your portfolio to surface stocks that are
+                  positive
+                  or negative outliers to
+                  make informed investment decisions</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="feature_wrapper">
+                <p class="feature_text" style="margin-bottom: 40px;">Drill down to see your portfolio's exposure to
+                  market
+                  moving events</p>
+                <img class="feature_image" src="./images/key3.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row key_slide">
+            <div class="col-6">
+              <div class="feature_wrapper">
+                <p class="feature_text" style="margin-bottom: 40px;">See how institutional investors are shifting their
+                  asset allocation to sectors,
+                  regions and stocks as this is reported</p>
+                <img style="width: 50%;" class="feature_image2" src="./images/key4.png" alt="">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="feature_wrapper">
+                <img class="feature_image2" src="./images/key5.png" alt="">
+                <p class="feature_text" style="margin-bottom: 40px;">Monitor in real time how sentiment and attention is
+                  shifting for your portfolio and
+                  individual stocks in your portfolio</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;">
+        <span class="key_dot" onclick="scrollToKeySlide(0)"></span>
+        <span class="key_dot" onclick="scrollToKeySlide(1)"></span>
+        <span class="key_next_slide_button" onclick="scrollToNextKeySlide()">
+          <img src="./images/icon-arrow-right.png" alt="">
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section class="key_analytic_section_mb">
+    <div class="container">
+      <div class="row" style="display: flex; justify-content: center;">
+        <hi class="section_title">Key Analytics and Features</hi>
+      </div>
+      <div class="key_slider_mb">
+        <div class="key_slide_wrapper_mb">
+          <div class="row key_slide_mb">
+            <div class="col-12">
+              <div class="feature_wrapper">
+                <p class="feature_text" style="margin-bottom: 40px;">Add up to 500 stocks to your portfolio from our
+                  universe of 50,000 (every listed
+                  company in the world)</p>
+                <img class="feature_image" src="./images/key1.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row key_slide_mb">
+            <div class="col-12">
+              <div class="feature_wrapper">
+                <img class="feature_image" src="./images/key2.png" alt="">
+                <p class="feature_text" style="margin-top: 40px;">Filter your portfolio to surface stocks that are
+                  positive
+                  or negative outliers to
+                  make informed investment decisions</p>
+              </div>
+            </div>
+          </div>
+          <div class="row key_slide_mb">
+            <div class="col-12">
+              <div class="feature_wrapper">
+                <p class="feature_text" style="margin-bottom: 40px;">Drill down to see your portfolio's exposure to
+                  market
+                  moving events</p>
+                <img class="feature_image" src="./images/key3.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row key_slide_mb">
+            <div class="col-12">
+              <div class="feature_wrapper">
+                <p class="feature_text" style="margin-bottom: 40px;">See how institutional investors are shifting their
+                  asset allocation to sectors,
+                  regions and stocks as this is reported</p>
+                <img class="feature_image2" src="./images/key4.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row key_slide_mb">
+            <div class="col-12">
+              <div class="feature_wrapper">
+                <img class="feature_image2" src="./images/key5.png" alt="">
+                <p class="feature_text" style="margin-bottom: 40px;">Monitor in real time how sentiment and attention is
+                  shifting for your portfolio and
+                  individual stocks in your portfolio</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;">
+        <span class="key_dot_mb" onclick="scrollToKeySlideMB(0)"></span>
+        <span class="key_dot_mb" onclick="scrollToKeySlideMB(1)"></span>
+        <span class="key_dot_mb" onclick="scrollToKeySlideMB(2)"></span>
+        <span class="key_dot_mb" onclick="scrollToKeySlideMB(3)"></span>
+        <span class="key_dot_mb" onclick="scrollToKeySlideMB(4)"></span>
+        <span class="key_next_slide_button_mb" onclick="scrollToNextKeySlideMB()">
+          <img src="./images/icon-arrow-right.png" alt="">
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section class="risk_section">
+    <div class="container">
+      <div class="risk_slider">
+        <div class="risk_slide_wrapper">
+          <div class="row risk_slide">
+            <div class="col-6">
+              <h1 class="section_title">Which cryptocurrencies are currently trending?</h1>
+              <p class="risk_description">Sentifi's sophisticated AI engine detects cryptocurrencies that are outliers
+                relative to peers in the top 100 cryptocurrencies by market cap. As sentiment underpins price movements
+                in the cryptocurrency markets, Sentifi's cryptocurrency analytics ensure you never miss a key market
+                momentum change.</p>
+            </div>
+            <div class="col-6" style="display: flex; justify-content: center;">
+              <img class="risk_image_5" src="images/crypto.png" />
+            </div>
+          </div>
+          <div class="row risk_slide">
+            <div class="col-6">
+              <h1 class="section_title">Am I at risk of losing portfolio value?</h1>
+              <p class="risk_description">Sentifi tracks investment insights on 50K+ stocks from 500M tweets and 2M
+                news
+                & blogs daily, so you know when the sentiment for your portfolio as a whole or for individual positions
+                starts shifting.</p>
+            </div>
+            <div class="col-6" style="position: relative;">
+              <img class="risk_image risk_image1" src="./images/risk1.png" alt="">
+              <iframe class="risk_iframe_1" src="https://www.youtube.com/embed/7pdEb3xYGX8" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="row risk_slide">
+            <div class="col-6">
+              <h1 class="section_title">How does my investment strategy compare to institutional
+                investors?</h1>
+              <p class="risk_description">Sentifi tracks holdings of 100’000 funds worldwide and lets you know when
+                institutional investors start reallocating their assets so you can react immediately.</p>
+            </div>
+            <div class="col-6" style="position: relative;">
+              <img class="risk_image risk_image2" src="./images/risk2.png" alt="">
+              <iframe class="risk_iframe_2" src="https://www.youtube.com/embed/tDkOwpQvXZ4" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="row risk_slide">
+            <div class="col-6">
+              <h1 class="section_title">Are there outliers in my portfolio and should I be
+                increasing or decreasing my asset allocation?</h1>
+              <p class="risk_description">Quickly identify outliers in
+                your
+                portfolio. Which stocks currently get a lot of attention from financial market influencers? Which are
+                sentiment
+                leaders and laggards?</p>
+            </div>
+            <div class="col-6" style="position: relative;">
+              <img class="risk_image risk_image3" src="./images/risk3.png" alt="">
+              <iframe class="risk_iframe_3" src="https://www.youtube.com/embed/1vrH7oEZUHo" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="row risk_slide">
+            <div class="col-6">
+              <h1 class="section_title">What events are impacting my portfolio?</h1>
+              <p class="risk_description">Sentifi’s AI models can identify 45’000 distinct events, such as M&A,
+                lawsuit,
+                and product recall. Find out about events before they affect your portfolio’s valuation. The analysis
+                also
+                works for macro events. See which stocks are impacted by the US elections, Brexit or coronavirus.</p>
+            </div>
+            <div class="col-6" style="position: relative;">
+              <img class="risk_image risk_image4" src="./images/risk4.png" alt="">
+              <iframe class="risk_iframe_4" src="https://www.youtube.com/embed/b6A8SBjfr98" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="row risk_slide">
+            <div class="col-6">
+              <h1 class="section_title">What do financial market insiders know about my portfolio?</h1>
+              <p class="risk_description">Find out what financial market influencers know about your portfolio. Get
+                access
+                to news articles, blog articles and tweets – from Bloomberg and Reuters to hidden insiders. You can
+                drill
+                down to see the perspective of one particular influencer group such as traders, financial analyst, or
+                journalists. You can filter by influencer score to only see what top influencers write.</p>
+            </div>
+            <div class="col-6" style="display: flex; justify-content: center;">
+              <img class="risk_image_5" src="images/img_whatdofinancial/img_whatdofinancial.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;">
+        <span class="risk_dot" onclick="scrollToRiskSlide(0)"></span>
+        <span class="risk_dot" onclick="scrollToRiskSlide(1)"></span>
+        <span class="risk_dot" onclick="scrollToRiskSlide(2)"></span>
+        <span class="risk_dot" onclick="scrollToRiskSlide(3)"></span>
+        <span class="risk_dot" onclick="scrollToRiskSlide(4)"></span>
+        <span class="risk_dot" onclick="scrollToRiskSlide(5)"></span>
+        <span class="risk_next_slide_button" onclick="scrollToNextRiskSlide()">
+          <img src="./images/icon-arrow-right.png" alt="">
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section_pricing">
+    <div class="container">
+      <!-- <div class="subscribe_wrapper" id="subscribe">
+        <div>
+          <button class="subscribe_button" id="checkout-button">Start My Free Trial</button>
+          <p class="agree_text">
+            No commitment for 14 days <br /> After your free trial, USD150 / month
+            <br />
+            <a class="agree_link" href="#term-of-use/" target="_blank">Terms & Conditions</a>
+            and
+            <a class="agree_link"
+              href="#wp-content/uploads/2021/01/Sentifi-Portfolio-Retail-Privacy-Policy.pdf"
+              target="_blank" download>Privacy Policy</a>.
+          </p>
+        </div>
+      </div> -->
+      <div class="row" style="display: flex; justify-content: center;">
+        <hi class="section_title">Pricing Plan</hi>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="wrapper_tier wrapper_tier_active">
+            <div class="header_tier">
+              <p class="header_tier_icon">
+                <img src="./images/icon-tier-1.png" alt="">
+              </p>
+              <p class="header_tier_text">Basic</p>
+            </div>
+            <div class="price_tier">
+              <p class="price">$12</p>
+              <p class="text_month">/month</p>
+            </div>
+            <ul class="info_tier">
+              <li class="info_tier_item">Limit of 10 stocks
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item">Monitor portfolio exposure to market moving events
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item">Surface stock outliers to make a buy, hold or sell decision
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item">Monitor sector and industry sentiment shifts affecting the portfolio
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item">Monitor changing portfolio risk due to extreme sentiment and attention shifts
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item">Weekly newsletter of market movers (including ESG leaders/laggards)
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item  not_include">Surface new investment opportunities with access to trending macro
+                events and impacted stocks
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item  not_include">Surface new currency investment opportunities with currency
+                outliers (including cryptocurrencies)
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item  not_include">Monitor institutional fund flows to sectors, industries, market
+                caps and stocks
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+            </ul>
+            <!--button class="button_active" id="checkout_button_tier_1">Subscribe</button-->
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="wrapper_tier">
+            <div class="header_tier">
+              <p class="header_tier_icon">
+                <img src="./images/icon-tier-2.png" alt="">
+              </p>
+              <p class="header_tier_text">Advanced</p>
+            </div>
+            <div class="price_tier">
+              <p class="price">$49</p>
+              <p class="text_month">/month</p>
+            </div>
+            <ul class="info_tier">
+              <li class="info_tier_item">Limit of 50 stocks
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item">Monitor portfolio exposure to market moving events
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item">Surface stock outliers to make a buy, hold or sell decision
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item">Monitor sector and industry sentiment shifts affecting the portfolio
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item">Monitor changing portfolio risk due to extreme sentiment and attention shifts
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item">Weekly newsletter of market movers (including ESG leaders/laggards)
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item">Surface new investment opportunities with access to trending macro
+                events and impacted stocks
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item  not_include">Surface new currency investment opportunities with currency
+                outliers (including cryptocurrencies)
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item  not_include">Monitor institutional fund flows to sectors, industries, market
+                caps and stocks
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+            </ul>
+            <!--button class="button_active" id="checkout_button_tier_2">Subscribe</button-->
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="wrapper_tier">
+            <div class="header_tier header_tier_passive">
+              <p class="header_tier_icon">
+                <img src="./images/icon-tier-3.png" alt="">
+              </p>
+              <p class="header_tier_text">Premium</p>
+            </div>
+            <div class="price_tier">
+              <p class="price">$150</p>
+              <p class="text_month">/month</p>
+            </div>
+            <ul class="info_tier">
+              <li class="info_tier_item">Limit of 500 stocks
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item">Monitor portfolio exposure to market moving events
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item">Surface stock outliers to make a buy, hold or sell decision
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item">Monitor sector and industry sentiment shifts affecting the portfolio
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item">Monitor changing portfolio risk due to extreme sentiment and attention shifts
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item">Weekly newsletter of market movers (including ESG leaders/laggards)
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item">Surface new investment opportunities with access to trending macro
+                events and impacted stocks
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item">Surface new currency investment opportunities with currency
+                outliers (including cryptocurrencies)
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+              <li class="info_tier_item">Monitor institutional fund flows to sectors, industries, market
+                caps and stocks
+                <svg class="info_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+                </svg>
+              </li>
+            </ul>
+            <!--button class="button_passive" id="checkout_button_tier_3">Subscribe</button-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section_whom_we_work_with">
+    <div class="container">
+      <div class="row" style="display: flex; justify-content: center;">
+        <hi class="section_title" style="margin-bottom: 40px;">Whom we work with</hi>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <p class="who_description">
+            Sentifi works with leading data, social media, technology and trade execution partners including:
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="partner_wrapper">
+            <a class="partner_link" href="https://ninjatrader.com/LP/VendorDemo/">
+              <img src="./images/partners/ninja-trader.png" alt="">
+            </a>
+            <a class="partner_link" href="https://www.morningstar.com/">
+              <img src="./images/partners/morning-star.png" alt="">
+            </a>
+            <a class="partner_link" href="https://www.factset.com/">
+              <img src="./images/partners/faceset.png" alt="">
+            </a>
+            <a class="partner_link" href="https://www.lexisnexis.com/en-us/gateway.page">
+              <img class="" src="./images/partners/lexis-nexis.png" alt="">
+            </a>
+            <a class="partner_link" href="https://cloud.google.com/">
+              <img src="./images/partners/google-cloud.png" alt="">
+            </a>
+            <a class="partner_link" href="https://twitter.com/home">
+              <img src="./images/partners/twitter.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section_faq">
+    <div class="container">
+      <div class="row" style="display: flex; justify-content: center;">
+        <hi class="section_title" style="margin-bottom: 40px;">FAQs</hi>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <div class="img_wrapper">
+            <img class="faq_img" src="./images/faq.png">
+          </div>
+        </div>
+        <div class="col-7">
+          <ul>
+            <li class="question question0">
+              <p class="question_text ">What does your data analytics include?</p>
+              <p class="answer hide">Our main proprietary data analytics combine attention volume, attention buzz,
+                sentiment, events and influencer information. Users can drill down e.g. to identify the sentiment for a
+                certain event or attention from a specific influencer group. Information is also aggregated to the level
+                of industries, sectors, indices, countries and regions.</p>
+              <button class="arrow_wrapper">
+                <img class="question_arrow" src="./images/icon-arrow-down.png">
+              </button>
+            </li>
+            <li class="question question1">
+              <p class="question_text ">Does your data generate alpha?</p>
+              <p class="answer hide">In-house and third party backtests prove that Sentifi’s data can be used to create
+                alpha-driving trading strategies that outperform major indices. Check out our <a style="color: #007bff;"
+                  target="_blank" href="https://mailchi.mp/sentifi/quantitative_manager">2-pager for quantitative asset
+                  managers</a>.</p>
+              <button class="arrow_wrapper">
+                <img class="question_arrow" src="./images/icon-arrow-down.png">
+              </button>
+            </li>
+            <li class="question question2">
+              <p class="question_text ">What’s your current data history?</p>
+              <p class="answer hide">Currently, we have data starting from June 2015</p>
+              <button class="arrow_wrapper">
+                <img class="question_arrow" src="./images/icon-arrow-down.png">
+              </button>
+            </li>
+            <li class="question question3">
+              <p class="question_text ">Do you use AI methodologies?</p>
+              <p class="answer hide">The Sentifi engine combines a multitude of AI models to structure unstructured
+                data and generate unique analytics that enable actionable insights. Read more in <a
+                  style="color: #007bff;" target="_blank"
+                  href="#wp-content/uploads/2020/02/Sentifi-Whitepaper-The-Sentifi-Engine.pdf">our
+                  engine whitepaper</a>.</p>
+              <button class="arrow_wrapper">
+                <img class="question_arrow" src="./images/icon-arrow-down.png">
+              </button>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="link_wrapper">
+            <a class="footer_link" href="#" target="_blank">
+              Sentifi
+            </a>
+            <a class="footer_link" href="#enterprise/" target="_blank">
+              Enterprise
+            </a>
+            <a class="footer_link" href="#privacy/" target="_blank">
+              Privacy
+            </a>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="link_wrapper">
+            <a class="footer_link" href="#term-of-use/#trading-risk-disclosure" target="_blank">
+              Trading Risk Disclosure
+            </a>
+            <a class="footer_link" href="#term-of-use/" target="_blank">
+              Terms & Conditions
+            </a>
+            <a class="footer_link" href="#contact/" target="_blank">
+              Contact
+            </a>
+          </div>
+        </div>
+        <div class="col-4">
+          <div>
+            <ul class="social_list">
+              <li class="social_icon">
+                <a class="icon_twitter" target="_blank" href="https://twitter.com/sentifi">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social_icon">
+                <a class="icon_linkedin" target="_blank" href="https://www.linkedin.com/company/sentifi/">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <!--a target="_blank" href="#newsletter/subscription.html"
+              class="button_active button_subscribe">
+              Sign up for Sentifi’s Newsletter
+            </a-->
+          </div>
+        </div>
+      </div>
+      <p class="copyright">© <span id="copyrightYear">2022</span> Sentifi Group AG</p>
+    </div>
+  </footer>
+
+  <script>
+    // Subscribe
+    let env = new Map();
+
+    fetch('runtime.props')
+      .then(response => response.text())
+      .then(content => {
+        const allLines = content.split(/\r\n|\n/);
+        allLines.forEach((line) => {
+          let keyValue = line.split('=');
+          env.set(keyValue[0], keyValue[1]);
+        });
+        document.getElementById("login").href = env.get("LOGIN_URL");
+        setupStripe();
+      });
+
+    function setupStripe() {
+      var stripe = Stripe(env.get('PUBLIC_KEY'));
+      var protocol = window.location.protocol;
+
+      var checkoutButtonTier1 = document.getElementById('checkout_button_tier_1');
+      checkoutButtonTier1.addEventListener('click', function () {
+        stripe.redirectToCheckout({
+          lineItems: [{ price: env.get('PRICE_ID_TIER_1'), quantity: 1 }],
+          mode: 'subscription',
+          successUrl: `${env.get('LANDING_PAGE')}?success=true`,
+          cancelUrl: `${env.get('LANDING_PAGE')}`,
+        })
+          .then(function (result) {
+            if (result.error) {
+              var displayError = document.getElementById('error-message');
+              displayError.textContent = result.error.message;
+            }
+          });
+      });
+
+      var checkoutButtonTier2 = document.getElementById('checkout_button_tier_2');
+      checkoutButtonTier2.addEventListener('click', function () {
+        stripe.redirectToCheckout({
+          lineItems: [{ price: env.get('PRICE_ID_TIER_2'), quantity: 1 }],
+          mode: 'subscription',
+          successUrl: `${env.get('LANDING_PAGE')}?success=true`,
+          cancelUrl: `${env.get('LANDING_PAGE')}`,
+        })
+          .then(function (result) {
+            if (result.error) {
+              var displayError = document.getElementById('error-message');
+              displayError.textContent = result.error.message;
+            }
+          });
+      });
+
+      var checkoutButtonTier3 = document.getElementById('checkout_button_tier_3');
+      checkoutButtonTier3.addEventListener('click', function () {
+        stripe.redirectToCheckout({
+          lineItems: [{ price: env.get('PRICE_ID_TIER_3'), quantity: 1 }],
+          mode: 'subscription',
+          successUrl: `${env.get('LANDING_PAGE')}?success=true`,
+          cancelUrl: `${env.get('LANDING_PAGE')}`,
+        })
+          .then(function (result) {
+            if (result.error) {
+              var displayError = document.getElementById('error-message');
+              displayError.textContent = result.error.message;
+            }
+          });
+      });
+    }
+  </script>
+
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

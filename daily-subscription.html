@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Retail</title>
+  <link href="css/base.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="js/jquery.min.js"></script>
+  <script src="https://js.stripe.com/v3"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="headerCt">
+        <div class="leftCt">
+          <img class="logo" src="./images/logo.png" alt="Sentifi" />
+        </div>
+        <div class="topnav">
+          <a class="navItem" id="sign-in">Sign in</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="notification" style="display: none;">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 colPaddingTop">
+          <div class="message">
+            <img class="" src="images/icon_check/icon_check.png" />
+            <h1 class="section_main_title">Transaction successful</h1>
+          </div>
+          <h3 class="section_sub_title">Please check your email for your login credentials and further steps.</h3>
+        </div>
+        <div class="col-6" style="display: flex; justify-content: center;">
+          <img class="section_image animate__animated animate__fadeInRight"
+            src="images/img_laptopportfolio/img_laptopportfolio.png" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="video_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 colPaddingTop">
+          <div id="error-message"></div>
+          <h1 class="section_main_title">Portfolio Intelligence</h1>
+          <h3 class="section_sub_title">for Retail Investors</h3>
+          <p class="section_main_description">Sentifi is the market leader in providing sentiment data to institutional
+            investors. In contrast to other
+            sentiment providers, Sentifi not only ingests news but also social media data. Sentifi’s AI engine is
+            7-years mature and provides sentiment and other analytics with the highest precision. For the first time in
+            its history, Sentifi provides access to its analytics for retail investors.</p>
+          <div class="video_wrapper video_button">
+            <button>
+              <img src="images/icon_play/icon_play.png" />
+            </button>
+            <p class="video_text">Watch the video</p>
+          </div>
+          <a href="#checkout-button" class="subscribe_button subscribe_button--link">SUBSCRIBE NOW</a>
+        </div>
+        <div class="col-6" style="display: flex; justify-content: center;">
+          <img class="section_image animate__animated animate__fadeInRight"
+            src="images/img_laptopportfolio/img_laptopportfolio.png" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="even_section" style="padding: 80px 0;">
+    <div class="container">
+      <div class="row box_wrapper">
+        <div class="col-2">
+          <div class="box">
+            <p class="box_text">Am I at risk of losing portfolio value?</p>
+            <a href="#section1" class="box_link">
+              <img src="images/next/next.png">
+            </a>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="box">
+            <p class="box_text">How does my investment strategy compare to institutional investors?</p>
+            <a href="#section2" class="box_link">
+              <img src="images/next/next.png">
+            </a>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="box">
+            <p class="box_text">Are there outliers in my portfolio and should I be increasing or decreasing my asset
+              allocation?</p>
+            <a href="#section3" class="box_link">
+              <img src="images/next/next.png">
+            </a>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="box">
+            <p class="box_text">What events are impacting my portfolio?</p>
+            <a href="#section4" class="box_link">
+              <img src="images/next/next.png">
+            </a>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="box">
+            <p class="box_text">What do financial market insiders know about my portfolio?</p>
+            <a href="#section5" class="box_link">
+              <img src="images/next/next.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section1">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 colPaddingTop">
+          <h1 class="section_title">Am I at risk of losing portfolio value?</h1>
+          <p class="section_description">Sentifi tracks investment insights on 50K+ stocks from 500M tweets and 2M news & blogs daily, so you know when the sentiment for your portfolio as a whole or for individual positions starts shifting.</p>
+          <div class="video_wrapper video_button video_button1">
+            <button>
+              <img src="images/icon_play/icon_play.png" />
+            </button>
+            <p class="video_text">Watch the demo</p>
+          </div>
+        </div>
+        <div class="col-6" style="display: flex; justify-content: center;">
+          <img src="images/img_amiatriskj/img_amiatriskj.png" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="even_section">
+    <div class="container">
+      <div class="row reverse">
+        <div class="col-6">
+          <h1 class="section_title">How does my investment strategy compare to institutional
+            investors?</h1>
+          <p class="section_description">Sentifi tracks holdings of 100’000 funds worldwide and lets you know when
+            institutional investors start reallocating their assets so you can react immediately.</p>
+          <div class="video_wrapper video_button video_button2">
+            <button>
+              <img src="images/icon_play/icon_play.png" />
+            </button>
+            <p class="video_text">Watch the demo</p>
+          </div>
+        </div>
+        <div class="col-6" style="display: flex; justify-content: center;">
+          <img src="images/img_howdoes/img_howdoes.png" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section3">
+    <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+      <h1 class="section_title" style="text-align: center;">Are there outliers in my portfolio and should I be
+        increasing or decreasing my asset allocation?</h1>
+      <p class="section_description" style="text-align: center; margin-bottom: 30px">Quickly identify outliers in your
+        portfolio. Which stocks currently get a lot of attention from financial market influencers? Which are sentiment
+        leaders and laggards?</p>
+      <div class="video_wrapper video_button video_button3" style="min-width: 300px;">
+        <button>
+          <img src="images/icon_play/icon_play.png" />
+        </button>
+        <p class="video_text">Watch the demo</p>
+      </div>
+      <img src="images/img_arethere/img_arethere.png" />
+    </div>
+  </section>
+
+  <section id="section4" class="even_section">
+    <div class="container">
+      <div class="row reverse">
+        <div class="col-6 colPaddingTop">
+          <h1 class="section_title">What events are impacting my portfolio? </h1>
+          <p class="section_description">Sentifi’s AI models can identify 45’000 distinct events, such as M&A, lawsuit,
+            and product recall. Find out about events before they affect your portfolio’s valuation. The analysis also
+            works for macro events. See which stocks are impacted by the US elections, Brexit or coronavirus.</p>
+          <div class="video_wrapper video_button video_button4">
+            <button>
+              <img src="images/icon_play/icon_play.png" />
+            </button>
+            <p class="video_text">Watch the demo</p>
+          </div>
+        </div>
+        <div class="col-6" style="display: flex; justify-content: center;">
+          <img src="images/img_what events are impactingg/img_what events are impactingg.png" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section5">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 colPaddingTop">
+          <h1 class="section_title">What do financial market insiders know about my portfolio?</h1>
+          <p class="section_description">Find out what financial market influencers know about your portfolio. Get
+            access
+            to news articles, blog articles and tweets – from Bloomberg and Reuters to hidden insiders. You can drill
+            down to see the perspective of one particular influencer group such as traders, financial analyst, or
+            journalists. You can filter by influencer score to only see what top influencers write.</p>
+        </div>
+        <div class="col-6" style="display: flex; justify-content: center;">
+          <img src="images/img_whatdofinancial/img_whatdofinancial.png" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="even_section">
+    <div class="container">
+      <div class="row" style="display: flex; justify-content: center;">
+        <hi class="section_title" style="margin-bottom: 40px;">Key analytics and features</hi>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="feature_wrapper">
+            <img class="check_icon" src="images/icon_check/icon_check.png" />
+            <p class="feature_text">Select stocks from a universe of 50’000 (every listed company in the world)</p>
+          </div>
+          <div class="feature_wrapper">
+            <img class="check_icon" src="images/icon_check/icon_check.png" />
+            <p class="feature_text">Add up to 500 stocks to your portfolios /watchlists</p>
+          </div>
+          <div class="feature_wrapper">
+            <img class="check_icon" src="images/icon_check/icon_check.png" />
+            <p class="feature_text">Create an unlimited number of portfolios / watchlists</p>
+          </div>
+          <div class="feature_wrapper">
+            <img class="check_icon" src="images/icon_check/icon_check.png" />
+            <p class="feature_text">Find out which stocks in your portfolio are impacted by current macro events</p>
+          </div>
+          <div class="feature_wrapper">
+            <img class="check_icon" src="images/icon_check/icon_check.png" />
+            <p class="feature_text">For each stock in your portfolio, identify the events that currently affect it</p>
+          </div>
+          <div class="feature_wrapper">
+            <img class="check_icon" src="images/icon_check/icon_check.png" />
+            <p class="feature_text">Drill down to see what different influencer groups such as traders, brokers,
+              fund/portfolio managers, activists, etc say about your portfolio.</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="feature_wrapper">
+            <img class="check_icon" src="images/icon_check/icon_check.png" />
+            <p class="feature_text">Monitor in real-time how sentiment for your portfolio and individual stocks is
+              shifting</p>
+          </div>
+          <div class="feature_wrapper">
+            <img class="check_icon" src="images/icon_check/icon_check.png" />
+            <p class="feature_text">Learn about asset allocation shifts of institutional investors as results are
+              reported </p>
+          </div>
+          <div class="feature_wrapper">
+            <img class="check_icon" src="images/icon_check/icon_check.png" />
+            <p class="feature_text">Identify stocks that get unusual high attention from financial market influencers
+            </p>
+          </div>
+          <div class="feature_wrapper">
+            <img class="check_icon" src="images/icon_check/icon_check.png" />
+            <p class="feature_text">Identify sentiment leaders and laggards in your portfolio or on your watchlists</p>
+          </div>
+          <div class="feature_wrapper">
+            <img class="check_icon" src="images/icon_check/icon_check.png" />
+            <p class="feature_text">Read in real time what major influencers (filtered out from 500 Million news
+              articles, blog articles, and tweets) are writing about the stocks in your portfolio</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="subscribe_wrapper" id="subscribe">
+        <div class="pricing_wrapper">
+          <p class="pricing">PRICING</p>
+          <p class="month_subscription">1 DAY SUBSCRIPTION</p>
+        </div>
+        <p class="price">CHF 0.1<span class="month"> / day</span></p>
+        <div>
+          <button class="subscribe_button" id="checkout-button">SUBSCRIBE NOW</button>
+          <p class="agree_text">
+            By clicking Subscribe Now, you agree to our
+            <br />
+            <a class="agree_link"
+              href="https://sentifi.com/page/term-of-use/"
+              target="_blank">Terms & Conditions</a>
+            and
+            <a class="agree_link"
+              href="https://sentifi.com/wp-content/uploads/2021/01/Sentifi-Portfolio-Retail-Privacy-Policy.pdf"
+              target="_blank" download>Privacy Policy</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="display: flex; justify-content: center;">
+        <p class="contact">Please <a href="https://sentifi.com/page/contact/">contact us</a>, if you have any questions!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row" style="display: flex; justify-content: center;">
+        <hi class="section_title" style="margin-bottom: 40px;">Whom we work with</hi>
+      </div>
+      <div class="row">
+        <div class="col-4 partner">
+          <a class="partner_link" href="https://ninjatrader.com/LP/VendorDemo/">
+            <img style="width: 115%;" src="./images/partners/ninja-trader.png" alt="">
+          </a>
+        </div>
+        <div class="col-4 partner">
+          <a class="partner_link" href="https://www.morningstar.com/">
+            <img style="width: 70%;" src="./images/partners/morningstar.svg" alt="">
+          </a>
+        </div>
+        <div class="col-4 partner">
+          <a class="partner_link" href="https://www.lexisnexis.com/en-us/gateway.page">
+            <img class="partner_logo" src="./images/partners/lexis.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 partner">
+          <a class="partner_link" href="https://twitter.com/home">
+            <span class="twitter_logo_wrapper">
+              <img class="twitter_logo" src="./images/partners/twitter.png" alt="">
+              <img class="twitter_text" src="./images/partners/twitter-text.png" alt="">
+            </span>
+          </a>
+        </div>
+        <div class="col-4 partner">
+          <a class="partner_link" href="https://www.factset.com/">
+            <img style="width: 76%;" src="./images/partners/factset.svg" alt="">
+          </a>
+        </div>
+        <div class="col-4 partner">
+          <a class="partner_link" href="https://cloud.google.com/">
+            <img style="width: 100%;" src="./images/partners/google-cloud.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer_wrapper">
+      <div>
+        <p class="copyright">© <span id="copyrightYear">2022</span> Sentifi Group AG</p>
+      </div>
+      <div class="link_wrapper">
+        <a class="footer_link" href="https://sentifi.com/" target="_blank">
+          <span>Sentifi</span>
+        </a>
+        <a class="footer_link" href="https://sentifi.com/enterprise/" target="_blank">
+          <span>Enterprise</span>
+        </a>
+        <a class="footer_link" href="https://sentifi.com/page/privacy/" target="_blank">
+          <span>Privacy</span>
+        </a>
+        <a class="footer_link" href="https://sentifi.com/page/term-of-use/" target="_blank">
+          <span>Terms & Conditions</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Subscribe
+    let env = new Map();
+
+    fetch('config/qa-daily.props')
+      .then(response => response.text())
+      .then(content => {
+        const allLines = content.split(/\r\n|\n/);
+        allLines.forEach((line) => {
+          let keyValue = line.split('=');
+          env.set(keyValue[0], keyValue[1]);
+        });
+        document.getElementById("sign-in").href = env.get("LOGIN_URL");
+        setupStripe();
+      });
+
+    function setupStripe() {
+      var stripe = Stripe(env.get('PUBLIC_KEY'));
+      var checkoutButton = document.getElementById('checkout-button');
+      checkoutButton.addEventListener('click', function () {
+        var protocol = window.location.protocol;
+        stripe.redirectToCheckout({
+          lineItems: [{ price: env.get('PRICE_ID'), quantity: 1 }],
+          mode: 'subscription',
+          successUrl: `${env.get('LANDING_PAGE')}?success=true`,
+          cancelUrl: `${env.get('LANDING_PAGE')}`,
+        })
+          .then(function (result) {
+            if (result.error) {
+              var displayError = document.getElementById('error-message');
+              displayError.textContent = result.error.message;
+            }
+          });
+      });
+    }
+  </script>
+
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
